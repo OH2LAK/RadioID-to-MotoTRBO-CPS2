@@ -183,7 +183,7 @@
             const downloadURL = 'https://radioid.net/static/user.csv';
             const mccInput = document.getElementById('mccInput').value.trim();
             
-            if (!mccInput.match(/^\d{1}$|^\d{3}$/)) {
+            if (!mccInput.match(/^1$|^\d{3}$/)) {
                 messageContainer.innerHTML = `
                     <div class="message error">
                         Error: Please enter a valid 3-digit MCC code
@@ -191,7 +191,7 @@
                 return;
             }
             
-            const mcc = mccInput.match(/^\d{1}$|^\d{3}$/) ? mccInput : '244';
+            const mcc = mccInput.match(/^1$|^\d{3}$/) ? mccInput : '244';
 
             fetch(downloadURL)
                 .then(response => response.text())
