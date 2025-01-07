@@ -191,7 +191,7 @@
                 return;
             }
             
-            const mcc = mccInput.match(/^\d{3}$/) ? mccInput : '244';
+            const mcc = mccInput.match(/^\d{1}$|^\d{3}$/) ? mccInput : '244';
 
             fetch(downloadURL)
                 .then(response => response.text())
