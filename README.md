@@ -23,7 +23,7 @@
 ![Where to import contact-CSV -file to MotoTRBO CPS2](https://github.com/user-attachments/assets/c1ab112e-0e63-4053-9a9f-4ce5e012ebb8)
 
 >[!NOTE]
->Imported contacts do not overwrite or remove existing contacts. Imported contacts are simply amended to the list of exiting contacts. There are tricks to remove and rename contacts through the import file, maybe I'll make a tool to handle those too!
+>Imported contacts do not overwrite or remove existing contacts. Imported contacts are simply amended to the list of existing contacts. There are tricks to remove and rename contacts through the import file, maybe I'll make a tool to handle those too!
 
 5. Buy me coffee for a good job!
 
