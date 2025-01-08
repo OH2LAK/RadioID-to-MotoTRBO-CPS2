@@ -37,11 +37,14 @@ body {
 }
 
 #message-container {
-    position: relative;  /* Change from absolute to relative */
-    margin-top: 30px;   /* Space between button and messages */
+    position: absolute;
+    border-radius: 25px;
+    bottom: 100px;  /* Keep above footer */
+    left: 50%;
+    transform: translateX(-50%);
     width: 80%;
     text-align: center;
-    bottom: 100px;  /* Adjusted to be above footer */
+    z-index: 99; /* Below footer */
 }
 
 .header {
