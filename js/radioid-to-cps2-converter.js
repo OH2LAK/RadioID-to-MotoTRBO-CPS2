@@ -103,13 +103,14 @@ document.getElementById('download-btn').addEventListener('click', function() {
             window.URL.revokeObjectURL(downloadURL);
 
             const warningMessage = processedRows.length > 1000 
-                ? '<br><span style="color: #ff0000">Warning: File contains more than 1000 contacts and wont fit to the radio. Please edit the file before importing to CPS2!</span>' 
+                ? '<div class=message error">Warning: File contains more than 1000 contacts and wont fit to the radio. Please edit the file before importing to CPS2!</span>' 
                 : '';
 
             messageContainer.innerHTML = `
                 <div class="message success">
-                    File "${filename}" has been created with ${processedRows.length} contacts and sent to your browser!${warningMessage}
-                </div>`;
+                    File "${filename}" has been created with ${processedRows.length} contacts and sent to your browser!
+                </div>
+                ${warningMessage}`;
         })
         .catch(error => {
             messageContainer.innerHTML = `
