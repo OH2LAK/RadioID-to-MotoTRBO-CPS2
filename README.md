@@ -7,7 +7,7 @@
 5. The MotoTRBO CPS2 Contact list CSV-file has total of 42 fields per contact. The remaining 39 fields are populated with default or empty data per an export example of contacts from the CPS2.
 
 ## Usage
-1. Browse to https://oh2lak.radio/RadioID-to-CPS2/ or install the webscript to your own internet-connected webserver
+1. Browse to https://oh2lak.radio/RadioID-to-CPS2/ or install the webscript to your own internet-connected webserver with according to (INSTALL.md) 
 2. Select the MCC of which you wish to download the contacts for. Default on my server is 244 (Finland)
 3. Click 'Download CPS2 contact list' button and the file will be automatically downloaded.
 
