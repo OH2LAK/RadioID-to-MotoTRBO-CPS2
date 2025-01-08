@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>RadioID to MotoTRBO CPS2 contact list creator</title>
+    <link rel="icon" href="img/motorola.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>RadioID to MotoTRBO CPS2<br>contact list creator</h1>
+        </div>
+        <div class="input-container">
+            <div>
+                <div class="input-label">Enter which MCC contacts to retrieve (Default 244)<br>North American DMR-ID prefix '1' also supported</div>
+                <input type="text" id="mccInput" placeholder="Enter 3-digit MCC code" value="244">
+            </div>
+            <div class="button-container">
+                <button id="download-btn">Download CPS2 contact list CSV</button>
+            </div>
+        </div>
+        <div id="message-container"></div>
+    </div>
+    <div class="footer">
+        <a href="https://buymeacoffee.com/erikfinskas" target="_blank" class="coffee-link">
+            <img src="https://oh2lak.radio/buy-me-a-coffee.png" alt="Buy me a coffee">
+        </a>
+        <div class="footer-right">
+            <a href="https://github.com/OH2LAK/RadioID-to-MotoTRBO-CPS2" target="_blank" class="howto-link">How to use this tool</a>
+        </div>
+    </div>
+    <script src="js/radioid-to-cps2-converter.js"></script>
+</body>
+</html>
