@@ -10,8 +10,13 @@ This project is a web application that allows online conversion from RadioID dat
 │   └── styles.css
 ├── js
 │   └── radioid-to-cps2-converter.js
+├── img
+│   └── motorola.png
+│   └── CPS2-background.png
 ├── index.html
 └── README.md
+└── README.txt
+└── INSTALL.md
 ```
 
 ## Files
