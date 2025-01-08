@@ -71,12 +71,6 @@ input[type="text"] {
     background-color: #839aff;
     }
 .message {
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    }
-#message-container {
     position: absolute;
     border-radius: 25px;
     bottom: 100px;  /* Keep above footer */
@@ -85,29 +79,29 @@ input[type="text"] {
     width: 80%;
     text-align: center;
     z-index: 99; /* Below footer */
-    }
+}
 .error {
     background-color: #ffebee;
     color: #c62828;
     border: 1px solid #ef5350;
-    }
+}
 .success {
     background-color: #e8f5e9;
     color: #2e7d32;
     border: 1px solid #66bb6a;
-    }
+}
 .coffee-link {
     position: flex;
     align-items: center;
     transition: transform 0.3s ease;
-    }
+}
 .coffee-link:hover {
     transform: scale(1.1);
-    }
+}
 .coffee-link img {
     width: 150px;
     height: auto;
-    }
+}
 .footer {
     position: fixed;
     bottom: 0;
