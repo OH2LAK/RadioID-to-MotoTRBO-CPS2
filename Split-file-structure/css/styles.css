@@ -1,0 +1,48 @@
+body {
+    background-color: #00AEEF;
+    background-image: url('CPS2-background.png');
+    background-repeat: no-repeat;
+    background-position: center 150px;
+    background-size: auto;
+    width: 800px;
+    height: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: calc(100% - 80px); /* Subtract footer height */
+    width: 100%;
+    margin-bottom: 80px; /* Add margin equal to footer height */
+}
+.input-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;
+}
+.button-container {
+    position: relative;  /* Remove fixed positioning */
+    margin-top: 20px;   /* Add space after input */
+}
+#message-container {
+    position: relative;  /* Change from absolute to relative */
+    margin-top: 30px;   /* Space between button and messages */
+    width: 80%;
+    text-align: center;
+}        
+.header {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+input[type="text"] {
+    width: 100px;
+    padding: 5px;
+}
