@@ -1,6 +1,6 @@
 body {
     background-color: #00AEEF;
-    background-image: url('img/CPS2-background.png');
+    background-image: url('CPS2-background.png');
     background-repeat: no-repeat;
     background-position: center 150px;
     background-size: auto;
@@ -12,7 +12,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-}
+    }
 .container {
     text-align: center;
     display: flex;
@@ -21,28 +21,121 @@ body {
     height: calc(100% - 80px); /* Subtract footer height */
     width: 100%;
     margin-bottom: 80px; /* Add margin equal to footer height */
-}
+    }
 .input-container {
     margin: 0;
     display: flex;
     flex-direction: column;  /* Stack elements vertically */
     align-items: center;
-}
+    }
 .button-container {
     position: relative;  /* Remove fixed positioning */
     margin-top: 20px;   /* Add space after input */
-}
+    }
 #message-container {
     position: relative;  /* Change from absolute to relative */
     margin-top: 30px;   /* Space between button and messages */
     width: 80%;
     text-align: center;
-}        
+    }        
 .header {
     margin-top: 25px;
     margin-bottom: 10px;
-}
+    }
 input[type="text"] {
     width: 100px;
     padding: 5px;
-}
+    font-size: 16px;
+    text-align: center;
+    margin: 5px 0;
+    background-color: #0000ff;
+    color: white;
+    border-radius: 25px;
+    }
+.input-label {
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 16px;
+    }
+#download-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: #0000ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    }
+#download-btn:hover {
+    background-color: #839aff;
+    }
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    }
+#message-container {
+    position: absolute;
+    border-radius: 25px;
+    bottom: 100px;  /* Keep above footer */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    z-index: 99; /* Below footer */
+    }
+.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef5350;
+    }
+.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #66bb6a;
+    }
+.coffee-link {
+    position: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    }
+.coffee-link:hover {
+    transform: scale(1.1);
+    }
+.coffee-link img {
+    width: 150px;
+    height: auto;
+    }
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: #00AEEF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 100;
+    }
+.footer-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    }
+.howto-link {
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+    }   
+.howto-link:hover {
+    color: #839aff;
+    }
+#message-container {
+    bottom: 100px;  /* Adjusted to be above footer */
+    }
