@@ -103,7 +103,7 @@ document.getElementById('download-btn').addEventListener('click', function() {
             window.URL.revokeObjectURL(downloadURL);
 
             const warningMessage = processedRows.length > 1000 
-                ? '<div class=message error">Warning: File contains more than 1000 contacts and wont fit to the radio. Please edit the file before importing to CPS2!</span>' 
+                ? '<div class=message error">Warning: File contains more than 1000 contacts and wont fit to the radio. Please edit the file before importing to CPS2!</div>' 
                 : '';
 
             messageContainer.innerHTML = `
